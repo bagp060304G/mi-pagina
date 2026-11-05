@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi página personal</title>
+
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; margin: 20px; background-color: #eeeeee; color: black; }
+        .encabezado { background-color: #555555; color: white; padding: 20px; text-align: center; }
+        .encabezado h1 { margin: 0; }
+        .menu { background-color: #dddddd; padding: 15px; text-align: center; margin-top: 10px; }
+        .menu a { color: black; text-decoration: none; padding: 10px; }
+        .contenido { display: flex; gap: 15px; margin-top: 20px; }
+        .bibliografia { background-color: #dddddd; padding: 20px; width: 60%; overflow: visible; height: auto; }
+        .bibliografia h2 { text-align: center; }
+        .bibliografia p { font-size: 16px; line-height: 1.6; text-align: justify; }
+        .multimedia { background-color: #dddddd; padding: 15px; width: 40%; }
+        .seccion { background-color: white; padding: 15px; margin-bottom: 15px; text-align: center; }
+        .seccion h2 { margin-top: 0; font-size: 20px; }
+        .mi-foto { width: 100%; max-width: 300px; height: auto; }
+        audio { width: 100%; max-width: 350px; }
+        video { width: 100%; max-width: 350px; height: auto; }
+        .pie { background-color: #555555; color: white; text-align: center; padding: 20px; margin-top: 20px; }
+        .pie h3 { margin-top: 0; }
+        .pie a { color: white; text-decoration: none; }
+
+        @media screen and (max-width: 768px) {
+            body { margin: 10px; }
+            .contenido { display: block; }
+            .bibliografia { width: auto; margin-bottom: 15px; }
+            .multimedia { width: auto; }
+            .menu a { display: inline-block; padding: 8px; }
+            .mi-foto { max-width: 100%; }
+            audio, video { max-width: 100%; }
+            .pie { overflow-wrap: break-word; }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="encabezado">
+        <h1>Mi Biografía</h1>
+    </div>
+
+    <div class="menu">
+        <a href="#bibliografia">| Bibliografía |</a>
+        <a href="#fotos">| Fotos |</a>
+        <a href="#musica">| Música |</a>
+        <a href="#video">| Video |</a>
+    </div>
+
+    <div class="contenido">
+
+        <div class="bibliografia" id="bibliografia">
+            <h2>Bibliografía</h2>
+
+            <p>
+                Hola, mi nombre es Bryan Gonzalez Pluas, tengo 22 años de edad, vivo en el canton Alfredo Baquerizo Moreno (JUJAN). Me gusta mucho aprender mas sobre lo que es la informatica, de hecho me gradue en el colegio en lo que es la carrera de informatica. En lo que es mi vida soy ua persona agradable, soy muy empatico y me gusta socializar mucho (digamos), Escogi estudiar esta carrera por seguir mi rama del colegio ya ue siempre me gusto mucho andar en computadoras, aprender cosas basicas de word, excel y powerpoint ya que hice un curso unos 7 años atras. Espero seguir aprendiendo mas de todo lo que conlleva mi carrera y poder graduarme sin problemas.
+            </p>
+        </div>
+
+        <div class="multimedia">
+
+            <div class="seccion" id="fotos">
+                <h2>Mi fotografía</h2>
+                <img src="81460.jpeg" alt="Mi fotografía" class="mi-foto">
+            </div>
+
+            <div class="seccion" id="musica">
+                <h2>Mi música favorita</h2>
+                <p>Wonderwall - Oasis</p>
+                <audio controls>
+                    <source src="wonderwall.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+                <br>
+
+                <p>Diegales - Diego</p>
+                <audio controls>
+                    <source src="diego.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
+
+            <div class="seccion" id="video">
+                <h2>Mi video</h2>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="pie">
+        <h3>Contactos</h3>
+
+        <p>
+            <a href="https://wa.me/0993068863" target="_blank">WhatsApp</a>
+            |
+            <a> bagonzalezp@fafi.utb.edu.com</a>
+            |
+            <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+        </p>
+
+        <p>© 2026 - copyright @bryangonzalez</p>
+    </div>
+
+</body>
+</html>
